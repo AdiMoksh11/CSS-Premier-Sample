@@ -1,0 +1,552 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+    padding-top: 1px;
+}
+#nav{
+    height: 11vh;
+    width: 100%;
+    margin-top: 50px;
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h1{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monument;
+    font-size: 44px;
+    letter-spacing: -1px;
+    position: relative;
+}
+#nav h1::after{
+    content: "©️";
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    top: 22%;
+    right: 27%;
+}
+#nav h2{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #000;
+    font-size: 28px;
+    font-weight: 700;
+    /* background-color: red; */
+}
+#nav h2:nth-last-child(2){
+    width: 29%;
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+}
+#nav h3{
+    display: none;
+}
+#center{
+    width: 100%;
+    height: 90%;
+    /* background-color: red; */
+    position: relative;
+    padding: 4vw;
+}
+#content{
+    height: 100%;   
+    width: 100%;
+    background-color: blue;
+    position: relative;
+}
+#content video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: 55%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    padding: 3vw;
+    color: #ffffff; 
+    /* backdrop-filter: blur(5px);
+    background-color: (0, 0, 0, 0.154); */
+}
+#over1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+#over1 h1{
+    font-family: monument;
+    font-size: 3.6vw;
+    /* mix-blend-mode: difference; */
+}
+#over1 h2{
+    font-size: 1vw;
+    padding: 2vw 2vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border: 1px solid white;
+}
+#over2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid white;
+    padding: 1.5vw 0;
+}
+#over2 h4{
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+#over2 img{
+    height: 3vw;
+}
+
+#scroll{
+    /* padding: 1vw; */
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#container{
+    height: 100%;
+    width: 110%;
+    /* background-color: blue; */
+    display: inline-block;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    /* display: none; */
+    height: 96%; 
+    width: 16%;
+    padding-right: 1vw;
+    object-fit: cover;
+    /* object-position: top; */
+    border-radius: 50%;
+}
+
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#alphabet{
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+#alphabet h5{
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 2px solid black;
+    letter-spacing: 4px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 2vw;
+}
+#alphabet h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    letter-spacing: 3px;
+    cursor: pointer;
+    padding: 0.6vw 0.8vw;
+}
+#alphabet h6:hover{
+        border: 2px solid rgba(0, 0, 0);
+}
+
+
+
+#page2{
+    width: 100%;
+    height: 100%;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+    
+}
+#page2-part1{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9kZWx8ZW58MHx8MHx8fDA%3D);
+    object-fit: cover;
+}
+#page2-part2{
+    height: 100%;
+    width: 46%;
+  
+}
+#page2-part2 img{
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+  
+}
+#page2 h4{
+    padding: 2vh 0;
+    font-size: 5vh;
+}
+#page2 h5{
+    padding: 2.5vh 0;
+    font-size: 2vh;
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    /* background-color: crimson; */
+    position: relative;
+    padding: 4vw 6vw;
+}
+#page3>h1{
+    text-align: center;
+    font-family: monument;
+    text-transform: uppercase;
+    font-size: 4vw;
+    font-weight: 900; 
+    margin-bottom: 7vh;
+}
+.ele{
+    height: 15vh;
+    width: 100%;    
+    /* background-color: crimson; */
+    border-top: 2px solid black;
+    display: flex;
+    padding: 0 2vw;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /* font-family: monument; */
+}
+.ele img{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    border-radius: 50%;
+    left: 40%;
+
+
+}
+.ele h4{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 10%;
+}
+.ele .ele-2{
+    width: 40%;
+    /* background-color: red; */
+}
+.ele .ele-2 h1{
+    font-family: monument;
+    font-size: 4vh;
+    font-weight: 500;
+}
+.ele .ele-2 h5{
+    text-transform: uppercase; 
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.ele:nth-last-child(1){
+        border-bottom: 2px solid black;
+
+} 
+#marque{
+    /* height: 15vh; */
+    padding: 0.5ve;
+    width: 100%;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+#marque h1{
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-family: monument;
+    margin-right: 16px;
+    letter-spacing: 3px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+@keyframes move {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(calc(-100% - 20px));
+    }
+    
+}
+#footer{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:600px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+
+    #nav{
+    height: 7vh;
+    margin-top: 50px;
+    padding: 0 5vw;
+    }
+
+#nav h1{
+    width: 40%;
+    justify-content: flex-start;
+    font-size: 25px;
+}
+#nav h1::after{
+    display: none;
+}
+#nav h2{
+    display: none;
+}
+#nav h3{
+    display: block;
+}
+
+#center{
+    height: 40%;
+    position: relative;
+    padding: 4vw;
+}
+#content{
+    height: 100%;   
+    width: 100%;
+    background-color: blue;
+    position: relative;
+}
+#content video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: fit-content;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    padding: 3vw;
+    color: #ffffff; 
+}
+#over1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+#over1 h1{
+    font-family: monument;
+    font-size: 5vw;
+    font-weight: 100;
+}
+#over1 h2{
+    font-size: 3vw;
+    padding: 3vw 3vw;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+#over2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid white;
+    padding: 1.5vw 0;
+}
+#over2 h4{
+    font-size: 4vw;
+    font-weight: 500;
+}
+#over2 img{
+    height: 4vw;
+}
+
+#scroll{
+    height: 15vh;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#container{
+    height: 100%;
+    width: fit-content ;
+    /* background-color: blue; */
+    display: inline-block;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    height: 14vh; 
+    width: 21vw;
+    padding-right: 1vw;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#alphabet{
+    height: 6.5vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+#alphabet h5{
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 100;
+    border-bottom: 2px solid black;
+    letter-spacing: 4px;
+}
+#alphabet h6{
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    padding: 0.6vw 0.8vw;
+}
+#alphabet h6:hover{
+        border: 2px solid rgba(0, 0, 0);
+}
+
+
+#page2{
+    width: 100%;
+    height: 60%;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;   
+}
+#page2-part1{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9kZWx8ZW58MHx8MHx8fDA%3D);
+    object-fit: cover;
+    background-position: 50% 50%;
+
+}
+
+#page2-part2{
+    height: 90%;
+    width: 46%;
+  
+}
+#page2-part2 img{
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+#page2 h4{
+    padding: 1.8vh 0 0 0;
+    font-size: 2.5vh;
+}
+#page2 h5{
+    padding: 1vh 0;
+    font-size: 1.5vh;
+}
+
+#marque h1{
+    font-weight: 400;
+    -webkit-text-stroke: 0.8px black;
+}
+
+.ele img{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-radius: 50%;
+    left: 40%;
+}
+.ele h4{
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 10%;
+}
+
+.ele .ele-2 h1{
+    font-family: monument;
+    font-size: 3vh;
+    font-weight: 300;
+}
+.ele .ele-2 h5{
+    text-transform: uppercase; 
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+}
